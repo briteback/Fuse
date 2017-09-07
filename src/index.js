@@ -339,7 +339,8 @@ class Fuse {
   _format (results) {
     const finalOutput = []
 
-    this._log('\n\nOutput:\n\n', JSON.stringify(results))
+    // this breakes sometimes, and its not nice to stringify teh results even if verbose is set to false
+    // this._log('\n\nOutput:\n\n', JSON.stringify(results))
 
     let transformers = []
 
